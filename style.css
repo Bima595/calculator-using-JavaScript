@@ -1,0 +1,67 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#result {
+  margin-bottom: 450px;
+  margin-right: -235px;
+  height: 50px;
+  width: 200px;
+  grid-column: 1 / -1;
+  background-color: black;
+  color: rgb(212, 20, 20);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 15px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.button {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+button {
+  padding: 15px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+#hapusall,
+#hapus1 {
+  grid-column: span 2;
+  background-color: #ff6666;
+  color: #fff;
+}
+
+#samadengan {
+  background-color: #28a745;
+  color: #fff;
+}
+
+/* Tambahan: Efek untuk tombol operasi matematika */
+#tambah,
+#kurang,
+#kali,
+#bagi,
+#modulus,
+#pangkat {
+  background-color: #007bff;
+  color: #fff;
+}
