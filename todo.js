@@ -32,8 +32,8 @@ function addItem() {
     // Clear the input field after adding the item
     document.getElementById('input').value = '';
 
-    // Adjust the position of .bawah based on the total height of items
-    updateBawahPosition();
+    // Adjust the height of .bawah based on the input field height
+    updateBawahHeight();
 }
 
 function updateItem(item) {
@@ -50,17 +50,12 @@ function deleteItem(item) {
     // Remove the list item
     item.remove();
 
-    // Adjust the position of .bawah after removing an item
-    updateBawahPosition();
+    // Adjust the height of .bawah after removing an item
+    updateBawahHeight();
 }
 
-function updateBawahPosition() {
+function updateBawahHeight() {
     var itemList = document.getElementById('itemlist');
     var totalHeight = itemList.offsetHeight;
-    
-    // Get the height of the input box
-    var inputHeight = document.getElementById('input').offsetHeight;
-    
-    // Set the top margin of .bawah based on the total height and input height
-    document.querySelector('.bawah').style.marginTop = totalHeight + inputHeight + 'px';
+    document.querySelector('.bawah').style.height = totalHeight + parseInt(64) +'px';
 }
