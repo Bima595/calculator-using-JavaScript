@@ -27,7 +27,7 @@
   margin-left: 30px;
 }
 input {
-    border-radius: 5px;
+  border-radius: 5px;
   margin-top: -5px;
   background-color: white;
   margin-left: 30px;
@@ -59,11 +59,25 @@ li {
 }
 
 .button-add {
-    border-radius: 4px;
-    border-color: white;
-    color: white;
+  border-radius: 4px;
+  border-color: white;
+  color: white;
   height: 40px;
-  width: 150px; 
+  width: 150px;
   margin-left: 30px;
   background-color: #218838;
+}
+
+.kembali {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: #17a2b8;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.kembali:hover {
+  background-color: #21b2c8;
 }
