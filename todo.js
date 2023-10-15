@@ -77,6 +77,6 @@ function updateBawahHeight() {
   var itemList = document.getElementById("itemlist");
   var totalHeight = itemList.offsetHeight;
   document.querySelector(".bawah").style.height =
-    totalHeight + parseInt(64) + "px";
+    totalHeight + parseInt(70) + "px";
 }
 z;
